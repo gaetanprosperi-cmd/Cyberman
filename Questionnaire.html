@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mon QCM</title>
+  <link rel="stylesheet" href="Questionnaire.css">
+</head>
+<body>
+  <h1>Questionnaire</h1>
+
+  <form id="qcm">
+    <p>1. Quelle est la capitale de la France ?</p>
+    <input type="radio" name="q1" value="a"> Lyon<br>
+    <input type="radio" name="q1" value="b"> Marseille<br>
+    <input type="radio" name="q1" value="c"> Paris<br>
+
+    <p>2. Quel est le langage utilisé pour créer des pages web ?</p>
+    <input type="radio" name="q2" value="a"> Python<br>
+    <input type="radio" name="q2" value="b"> HTML<br>
+    <input type="radio" name="q2" value="c"> C++<br>
+
+    <button type="submit">Valider</button>
+  </form>
+
+  <div id="resultat"></div>
+
+  <script>
+    document.getElementById("qcm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Empêche le rechargement de la page
+
+      let score = 0;
+
+      // Réponses correctes
+      const bonnesReponses = {
+        q1: "c",
+        q2: "b"
+      };
+
+      // Vérifie chaque réponse
+      for (let question in bonnesReponses) {
+        const choix = document.querySelector(`input[name="${question}"]:checked`);
+        if (choix && choix.value === bonnesReponses[question]) {
+          score++;
+        }
+      }
+
+      // Affiche le résultat
+      document.getElementById("resultat").innerHTML = `<h2>Tu as obtenu ${score} / ${Object.keys(bonnesReponses).length}</h2>`;
+    });
+  </script>
+</body>
+</html>

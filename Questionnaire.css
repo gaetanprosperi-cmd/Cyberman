@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+  
+  background-image: url('/storage/emulated/0/Download/Limata-Réalisation projet/papier-peint-style-bande-dessinee_79603-1248.jpg'); /* Remplace par le bon chemin */
+  background-size: cover; /* L'image couvre tout l'écran */
+  background-repeat: no-repeat; /* Pas de répétition */
+  background-position: center center; /* Centrée */
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: auto;
+}
+
+p {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+#resultat {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.2em;
+  color: #007700;
+}
