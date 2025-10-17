@@ -3,10 +3,10 @@ body {
   background-color: #f4f4f4;
   padding: 20px;
   
-  background-image: url('/storage/emulated/0/Download/Limata-Réalisation projet/papier-peint-style-bande-dessinee_79603-1248.jpg'); /* Remplace par le bon chemin */
-  background-size: cover; /* L'image couvre tout l'écran */
-  background-repeat: no-repeat; /* Pas de répétition */
-  background-position: center center; /* Centrée */
+  background-image: url('https://gaetanprosperi-cmd.github.io/Cyberman/papier-peint-style-bande-dessinee_79603-1248.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 h1 {
